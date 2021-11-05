@@ -19,8 +19,7 @@
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 	--radius: 5px;
 	--radius-style: 0 5px;
-	/* --transition: .25s ease-out; */
-	--transition: .5s ease-out;
+	--transition: .25s ease-out;
 }
 
 /* BOOTSTRAP SETTINGS SECTION */
@@ -197,7 +196,6 @@ body {
 	padding: 0;
 	list-style-type: none; */
 	margin: 0 5px;
-	
 }
 .top-menu__link {
 	color: #fff;
@@ -208,7 +206,10 @@ body {
 	border-radius: var(--radius-style);
 	transition: background var(--transition);
 }
-
+.top-menu__link:hover, .top-menu__link:focus, span.top-menu__link {
+	color: rgba(255, 255, 255, 0.75);
+	background-color: rgba(196, 196, 196, 0.2);
+}
 .top-menu.top-menu_active {
 	visibility: visible;
 	opacity: 1;
@@ -236,6 +237,32 @@ body {
 	background-image: url(../images/interface/x.svg);
 }
 
+.nav-social-wrap {
+	text-align: right;
+}
+
+.nav-social {
+	background-color: rgba(196, 196, 196, 0.25);
+	border-radius: 10em;
+	display: inline-block;
+	padding: 2px 12px;
+}
+
+.nav-social__item {
+	display: inline-block;
+	margin: 0 2px;
+}
+.nav-social__item img {
+	width: 100%;
+	max-height: 17px;
+	min-width: 20px;
+	opacity: 0.75;
+	transition: opacity var(--transition);
+}
+
+.nav-social__item:hover img {
+	opacity: 1;
+}
 
 /* SLIDER */
 
